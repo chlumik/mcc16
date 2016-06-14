@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Localizable.stringsdict
+   Bonami
+
+   Created by Jan Nejtek on 24/05/16.
+   Copyright (c) 2016 Jiří Chlum. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>remaining_days</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@days@</string>
+            <key>days</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d deň</string>
+                <key>few</key>
+                <string>%d dni</string>
+                <key>other</key>
+                <string>%d dní</string>
+            </dict>
+        </dict>
+        <key>remaining_hours</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@hours@</string>
+            <key>hours</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d hodina</string>
+                <key>few</key>
+                <string>%d hodiny</string>
+                <key>other</key>
+                <string>%d hodín</string>
+            </dict>
+        </dict>
+
+    </dict>
+</plist>

@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E4C28111CD12DD7000550C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4C28101CD12DD7000550C9 /* LaunchScreen.xib */; };
+		7E522D161CF48C430055F075 /* BonamiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D151CF48C430055F075 /* BonamiTests.swift */; };
+		7E522D331CF59A8B0055F075 /* ProductDetailDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D311CF59A8B0055F075 /* ProductDetailDescription.swift */; };
+		7E522D341CF59A8B0055F075 /* ProductDetailProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D321CF59A8B0055F075 /* ProductDetailProperty.swift */; };
+		7E522D361CF59A920055F075 /* ProductDetailCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D351CF59A920055F075 /* ProductDetailCarousel.swift */; };
+		7E522D3A1CF59AA00055F075 /* MCRotatingCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D391CF59AA00055F075 /* MCRotatingCarousel.m */; };
+		7E522D3C1CF59AE50055F075 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D3B1CF59AE50055F075 /* ProductDetailViewController.swift */; };
+		7E522D401CF5A2D90055F075 /* ProductDetailName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D3F1CF5A2D90055F075 /* ProductDetailName.swift */; };
+		7E522D421CF5F0240055F075 /* ProductPriceStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D411CF5F0240055F075 /* ProductPriceStockView.swift */; };
+		7E522D441CF725950055F075 /* ModalPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E522D431CF725950055F075 /* ModalPhotoViewController.swift */; };
+		7E5656971CF462D300C5A191 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E5656991CF462D300C5A191 /* Localizable.strings */; };
+		7E56569A1CF462D700C5A191 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 7E56569C1CF462D700C5A191 /* Localizable.stringsdict */; };
+		7EFDF5FF1CE7AC80009EA411 /* SingleProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDF5FE1CE7AC80009EA411 /* SingleProductCell.swift */; };
+		7EFDF6011CE8DBB8009EA411 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDF6001CE8DBB8009EA411 /* Extensions.swift */; };
+		7EFDF6031CE8E49D009EA411 /* CampaignHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDF6021CE8E49D009EA411 /* CampaignHeaderView.swift */; };
+		960061211CF58C40004A371B /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960061201CF58C40004A371B /* OverlayView.swift */; };
+		961317A81CC8FB4500FB2DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961317A71CC8FB4500FB2DAD /* AppDelegate.swift */; };
+		961317B01CC8FB4500FB2DAD /* Bonami.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 961317AE1CC8FB4500FB2DAD /* Bonami.xcdatamodeld */; };
+		961317B21CC8FB4500FB2DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961317B11CC8FB4500FB2DAD /* Assets.xcassets */; };
+		961317CB1CC8FB4500FB2DAD /* BonamiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961317CA1CC8FB4500FB2DAD /* BonamiUITests.swift */; };
+		962B22261CE507AF00E66DB4 /* AllCampaignsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962B22251CE507AF00E66DB4 /* AllCampaignsCell.swift */; };
+		9663EB291CE1EE76000DA422 /* AllCampaignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663EB281CE1EE76000DA422 /* AllCampaignsViewController.swift */; };
+		9663EB2B1CE1EE82000DA422 /* SingleCampaignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663EB2A1CE1EE82000DA422 /* SingleCampaignViewController.swift */; };
+		966D6BE71CE5043C00F6EDB1 /* CampaignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6BE31CE5043C00F6EDB1 /* CampaignModel.swift */; };
+		966D6BE81CE5043C00F6EDB1 /* CampaignsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6BE41CE5043C00F6EDB1 /* CampaignsModel.swift */; };
+		966D6BE91CE5043C00F6EDB1 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6BE51CE5043C00F6EDB1 /* ProductModel.swift */; };
+		966D6BEA1CE5043C00F6EDB1 /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6BE61CE5043C00F6EDB1 /* ProductsModel.swift */; };
+		966D6BED1CE5045A00F6EDB1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966D6BEC1CE5045A00F6EDB1 /* Networking.swift */; };
+		9686A0721CF844C200A385C7 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686A0711CF844C200A385C7 /* DataError.swift */; };
+		9686A0741CF844D400A385C7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9686A0731CF844D400A385C7 /* ErrorView.swift */; };
+		96D9D1DD1CF7313300FD5D2F /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9D1DC1CF7313300FD5D2F /* RefreshView.swift */; };
+		EC864FE9342139D6DE62D956 /* Pods_Bonami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55FF2CA727A5E9582437C27 /* Pods_Bonami.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		961317BC1CC8FB4500FB2DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9613179C1CC8FB4500FB2DAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 961317A31CC8FB4500FB2DAD;
+			remoteInfo = Bonami;
+		};
+		961317C71CC8FB4500FB2DAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9613179C1CC8FB4500FB2DAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 961317A31CC8FB4500FB2DAD;
+			remoteInfo = Bonami;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22778F02452EDBC84798A0E0 /* Pods-Bonami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonami.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bonami/Pods-Bonami.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4C28101CD12DD7000550C9 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		7E522D151CF48C430055F075 /* BonamiTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonamiTests.swift; sourceTree = "<group>"; };
+		7E522D311CF59A8B0055F075 /* ProductDetailDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailDescription.swift; sourceTree = "<group>"; };
+		7E522D321CF59A8B0055F075 /* ProductDetailProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailProperty.swift; sourceTree = "<group>"; };
+		7E522D351CF59A920055F075 /* ProductDetailCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailCarousel.swift; sourceTree = "<group>"; };
+		7E522D371CF59A9F0055F075 /* Bonami-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bonami-Bridging-Header.h"; sourceTree = "<group>"; };
+		7E522D381CF59AA00055F075 /* MCRotatingCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRotatingCarousel.h; sourceTree = "<group>"; };
+		7E522D391CF59AA00055F075 /* MCRotatingCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRotatingCarousel.m; sourceTree = "<group>"; };
+		7E522D3B1CF59AE50055F075 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		7E522D3F1CF5A2D90055F075 /* ProductDetailName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailName.swift; sourceTree = "<group>"; };
+		7E522D411CF5F0240055F075 /* ProductPriceStockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductPriceStockView.swift; sourceTree = "<group>"; };
+		7E522D431CF725950055F075 /* ModalPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPhotoViewController.swift; sourceTree = "<group>"; };
+		7E56569D1CF462DF00C5A191 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E56569E1CF462DF00C5A191 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = cs; path = cs.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		7E56569F1CF462E500C5A191 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E5656A01CF462E500C5A191 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = sk; path = sk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		7E5656A11CF462EB00C5A191 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E5656A21CF462EB00C5A191 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = pl; path = pl.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		7EFDF5FE1CE7AC80009EA411 /* SingleProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleProductCell.swift; sourceTree = "<group>"; };
+		7EFDF6001CE8DBB8009EA411 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7EFDF6021CE8E49D009EA411 /* CampaignHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignHeaderView.swift; sourceTree = "<group>"; };
+		960061201CF58C40004A371B /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		961317A41CC8FB4500FB2DAD /* Bonami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonami.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		961317A71CC8FB4500FB2DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		961317AF1CC8FB4500FB2DAD /* Bonami.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bonami.xcdatamodel; sourceTree = "<group>"; };
+		961317B11CC8FB4500FB2DAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		961317B61CC8FB4500FB2DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961317BB1CC8FB4500FB2DAD /* BonamiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonamiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961317C11CC8FB4500FB2DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		961317C61CC8FB4500FB2DAD /* BonamiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BonamiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		961317CA1CC8FB4500FB2DAD /* BonamiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonamiUITests.swift; sourceTree = "<group>"; };
+		961317CC1CC8FB4500FB2DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		962B22251CE507AF00E66DB4 /* AllCampaignsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCampaignsCell.swift; sourceTree = "<group>"; };
+		9663EB281CE1EE76000DA422 /* AllCampaignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCampaignsViewController.swift; sourceTree = "<group>"; };
+		9663EB2A1CE1EE82000DA422 /* SingleCampaignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCampaignViewController.swift; sourceTree = "<group>"; };
+		966D6BE31CE5043C00F6EDB1 /* CampaignModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignModel.swift; sourceTree = "<group>"; };
+		966D6BE41CE5043C00F6EDB1 /* CampaignsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignsModel.swift; sourceTree = "<group>"; };
+		966D6BE51CE5043C00F6EDB1 /* ProductModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		966D6BE61CE5043C00F6EDB1 /* ProductsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
+		966D6BEC1CE5045A00F6EDB1 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		9686A0711CF844C200A385C7 /* DataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		9686A0731CF844D400A385C7 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		96D9D1DC1CF7313300FD5D2F /* RefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		A51232D3DB1B16ECDC81E7D5 /* Pods-Bonami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonami.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bonami/Pods-Bonami.release.xcconfig"; sourceTree = "<group>"; };
+		B55FF2CA727A5E9582437C27 /* Pods_Bonami.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonami.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		961317A11CC8FB4500FB2DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC864FE9342139D6DE62D956 /* Pods_Bonami.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961317B81CC8FB4500FB2DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961317C31CC8FB4500FB2DAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C2E0AFC72AD4AC070F177D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22778F02452EDBC84798A0E0 /* Pods-Bonami.debug.xcconfig */,
+				A51232D3DB1B16ECDC81E7D5 /* Pods-Bonami.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		357EB4B72C14077CC497270B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B55FF2CA727A5E9582437C27 /* Pods_Bonami.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E522D301CF59A750055F075 /* ProductDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				7E522D311CF59A8B0055F075 /* ProductDetailDescription.swift */,
+				7E522D3F1CF5A2D90055F075 /* ProductDetailName.swift */,
+				7E522D321CF59A8B0055F075 /* ProductDetailProperty.swift */,
+				7E522D351CF59A920055F075 /* ProductDetailCarousel.swift */,
+			);
+			name = ProductDetailCell;
+			sourceTree = "<group>";
+		};
+		7E5656901CF4612F00C5A191 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				7E5656991CF462D300C5A191 /* Localizable.strings */,
+				7E56569C1CF462D700C5A191 /* Localizable.stringsdict */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
+		9613179B1CC8FB4500FB2DAD = {
+			isa = PBXGroup;
+			children = (
+				961317A61CC8FB4500FB2DAD /* Bonami */,
+				961317BE1CC8FB4500FB2DAD /* BonamiTests */,
+				961317C91CC8FB4500FB2DAD /* BonamiUITests */,
+				961317A51CC8FB4500FB2DAD /* Products */,
+				05C2E0AFC72AD4AC070F177D /* Pods */,
+				357EB4B72C14077CC497270B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		961317A51CC8FB4500FB2DAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				961317A41CC8FB4500FB2DAD /* Bonami.app */,
+				961317BB1CC8FB4500FB2DAD /* BonamiTests.xctest */,
+				961317C61CC8FB4500FB2DAD /* BonamiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		961317A61CC8FB4500FB2DAD /* Bonami */ = {
+			isa = PBXGroup;
+			children = (
+				7E5656901CF4612F00C5A191 /* Localization */,
+				966D6BEB1CE5044600F6EDB1 /* Services */,
+				961317DB1CC8FB9E00FB2DAD /* Utils */,
+				961317DA1CC8FB9300FB2DAD /* Model */,
+				961317D91CC8FB8B00FB2DAD /* Controller */,
+				961317D81CC8FB8600FB2DAD /* View */,
+				961317B11CC8FB4500FB2DAD /* Assets.xcassets */,
+				961317B61CC8FB4500FB2DAD /* Info.plist */,
+				961317AE1CC8FB4500FB2DAD /* Bonami.xcdatamodeld */,
+				7E4C28101CD12DD7000550C9 /* LaunchScreen.xib */,
+			);
+			path = Bonami;
+			sourceTree = "<group>";
+		};
+		961317BE1CC8FB4500FB2DAD /* BonamiTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E522D151CF48C430055F075 /* BonamiTests.swift */,
+				961317C11CC8FB4500FB2DAD /* Info.plist */,
+			);
+			path = BonamiTests;
+			sourceTree = "<group>";
+		};
+		961317C91CC8FB4500FB2DAD /* BonamiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				961317CA1CC8FB4500FB2DAD /* BonamiUITests.swift */,
+				961317CC1CC8FB4500FB2DAD /* Info.plist */,
+			);
+			path = BonamiUITests;
+			sourceTree = "<group>";
+		};
+		961317D81CC8FB8600FB2DAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E522D301CF59A750055F075 /* ProductDetailCell */,
+				962B22251CE507AF00E66DB4 /* AllCampaignsCell.swift */,
+				7EFDF5FE1CE7AC80009EA411 /* SingleProductCell.swift */,
+				96D9D1DC1CF7313300FD5D2F /* RefreshView.swift */,
+				9686A0731CF844D400A385C7 /* ErrorView.swift */,
+				7EFDF6021CE8E49D009EA411 /* CampaignHeaderView.swift */,
+				960061201CF58C40004A371B /* OverlayView.swift */,
+				7E522D411CF5F0240055F075 /* ProductPriceStockView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		961317D91CC8FB8B00FB2DAD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9663EB281CE1EE76000DA422 /* AllCampaignsViewController.swift */,
+				9663EB2A1CE1EE82000DA422 /* SingleCampaignViewController.swift */,
+				7E522D3B1CF59AE50055F075 /* ProductDetailViewController.swift */,
+				7E522D431CF725950055F075 /* ModalPhotoViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		961317DA1CC8FB9300FB2DAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				966D6BE31CE5043C00F6EDB1 /* CampaignModel.swift */,
+				966D6BE41CE5043C00F6EDB1 /* CampaignsModel.swift */,
+				966D6BE51CE5043C00F6EDB1 /* ProductModel.swift */,
+				966D6BE61CE5043C00F6EDB1 /* ProductsModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		961317DB1CC8FB9E00FB2DAD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				961317A71CC8FB4500FB2DAD /* AppDelegate.swift */,
+				7EFDF6001CE8DBB8009EA411 /* Extensions.swift */,
+				7E522D381CF59AA00055F075 /* MCRotatingCarousel.h */,
+				7E522D391CF59AA00055F075 /* MCRotatingCarousel.m */,
+				7E522D371CF59A9F0055F075 /* Bonami-Bridging-Header.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		966D6BEB1CE5044600F6EDB1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				966D6BEC1CE5045A00F6EDB1 /* Networking.swift */,
+				9686A0711CF844C200A385C7 /* DataError.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		961317A31CC8FB4500FB2DAD /* Bonami */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961317CF1CC8FB4500FB2DAD /* Build configuration list for PBXNativeTarget "Bonami" */;
+			buildPhases = (
+				3D3D239C916D2C99F04F63D5 /* 📦 Check Pods Manifest.lock */,
+				961317A01CC8FB4500FB2DAD /* Sources */,
+				961317A11CC8FB4500FB2DAD /* Frameworks */,
+				961317A21CC8FB4500FB2DAD /* Resources */,
+				9AB8001C3350E990C1744BBC /* 📦 Embed Pods Frameworks */,
+				B88AFF5D3BF9EB9E90B45BBE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bonami;
+			productName = Bonami;
+			productReference = 961317A41CC8FB4500FB2DAD /* Bonami.app */;
+			productType = "com.apple.product-type.application";
+		};
+		961317BA1CC8FB4500FB2DAD /* BonamiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961317D21CC8FB4500FB2DAD /* Build configuration list for PBXNativeTarget "BonamiTests" */;
+			buildPhases = (
+				961317B71CC8FB4500FB2DAD /* Sources */,
+				961317B81CC8FB4500FB2DAD /* Frameworks */,
+				961317B91CC8FB4500FB2DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				961317BD1CC8FB4500FB2DAD /* PBXTargetDependency */,
+			);
+			name = BonamiTests;
+			productName = BonamiTests;
+			productReference = 961317BB1CC8FB4500FB2DAD /* BonamiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		961317C51CC8FB4500FB2DAD /* BonamiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 961317D51CC8FB4500FB2DAD /* Build configuration list for PBXNativeTarget "BonamiUITests" */;
+			buildPhases = (
+				961317C21CC8FB4500FB2DAD /* Sources */,
+				961317C31CC8FB4500FB2DAD /* Frameworks */,
+				961317C41CC8FB4500FB2DAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				961317C81CC8FB4500FB2DAD /* PBXTargetDependency */,
+			);
+			name = BonamiUITests;
+			productName = BonamiUITests;
+			productReference = 961317C61CC8FB4500FB2DAD /* BonamiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9613179C1CC8FB4500FB2DAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jiří Chlum";
+				TargetAttributes = {
+					961317A31CC8FB4500FB2DAD = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 59TZN5J7UC;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					961317BA1CC8FB4500FB2DAD = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 59TZN5J7UC;
+						TestTargetID = 961317A31CC8FB4500FB2DAD;
+					};
+					961317C51CC8FB4500FB2DAD = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 59TZN5J7UC;
+						TestTargetID = 961317A31CC8FB4500FB2DAD;
+					};
+				};
+			};
+			buildConfigurationList = 9613179F1CC8FB4500FB2DAD /* Build configuration list for PBXProject "Bonami" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = cs;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				cs,
+				sk,
+				pl,
+			);
+			mainGroup = 9613179B1CC8FB4500FB2DAD;
+			productRefGroup = 961317A51CC8FB4500FB2DAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				961317A31CC8FB4500FB2DAD /* Bonami */,
+				961317BA1CC8FB4500FB2DAD /* BonamiTests */,
+				961317C51CC8FB4500FB2DAD /* BonamiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		961317A21CC8FB4500FB2DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4C28111CD12DD7000550C9 /* LaunchScreen.xib in Resources */,
+				7E5656971CF462D300C5A191 /* Localizable.strings in Resources */,
+				7E56569A1CF462D700C5A191 /* Localizable.stringsdict in Resources */,
+				961317B21CC8FB4500FB2DAD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961317B91CC8FB4500FB2DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961317C41CC8FB4500FB2DAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D3D239C916D2C99F04F63D5 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AB8001C3350E990C1744BBC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bonami/Pods-Bonami-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B88AFF5D3BF9EB9E90B45BBE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bonami/Pods-Bonami-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		961317A01CC8FB4500FB2DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9686A0741CF844D400A385C7 /* ErrorView.swift in Sources */,
+				961317A81CC8FB4500FB2DAD /* AppDelegate.swift in Sources */,
+				966D6BED1CE5045A00F6EDB1 /* Networking.swift in Sources */,
+				966D6BEA1CE5043C00F6EDB1 /* ProductsModel.swift in Sources */,
+				7E522D421CF5F0240055F075 /* ProductPriceStockView.swift in Sources */,
+				966D6BE71CE5043C00F6EDB1 /* CampaignModel.swift in Sources */,
+				966D6BE81CE5043C00F6EDB1 /* CampaignsModel.swift in Sources */,
+				9686A0721CF844C200A385C7 /* DataError.swift in Sources */,
+				961317B01CC8FB4500FB2DAD /* Bonami.xcdatamodeld in Sources */,
+				7E522D441CF725950055F075 /* ModalPhotoViewController.swift in Sources */,
+				9663EB2B1CE1EE82000DA422 /* SingleCampaignViewController.swift in Sources */,
+				7EFDF6011CE8DBB8009EA411 /* Extensions.swift in Sources */,
+				960061211CF58C40004A371B /* OverlayView.swift in Sources */,
+				7E522D3A1CF59AA00055F075 /* MCRotatingCarousel.m in Sources */,
+				9663EB291CE1EE76000DA422 /* AllCampaignsViewController.swift in Sources */,
+				7E522D401CF5A2D90055F075 /* ProductDetailName.swift in Sources */,
+				7EFDF5FF1CE7AC80009EA411 /* SingleProductCell.swift in Sources */,
+				7E522D3C1CF59AE50055F075 /* ProductDetailViewController.swift in Sources */,
+				966D6BE91CE5043C00F6EDB1 /* ProductModel.swift in Sources */,
+				96D9D1DD1CF7313300FD5D2F /* RefreshView.swift in Sources */,
+				962B22261CE507AF00E66DB4 /* AllCampaignsCell.swift in Sources */,
+				7E522D361CF59A920055F075 /* ProductDetailCarousel.swift in Sources */,
+				7EFDF6031CE8E49D009EA411 /* CampaignHeaderView.swift in Sources */,
+				7E522D331CF59A8B0055F075 /* ProductDetailDescription.swift in Sources */,
+				7E522D341CF59A8B0055F075 /* ProductDetailProperty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961317B71CC8FB4500FB2DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E522D161CF48C430055F075 /* BonamiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961317C21CC8FB4500FB2DAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961317CB1CC8FB4500FB2DAD /* BonamiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		961317BD1CC8FB4500FB2DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 961317A31CC8FB4500FB2DAD /* Bonami */;
+			targetProxy = 961317BC1CC8FB4500FB2DAD /* PBXContainerItemProxy */;
+		};
+		961317C81CC8FB4500FB2DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 961317A31CC8FB4500FB2DAD /* Bonami */;
+			targetProxy = 961317C71CC8FB4500FB2DAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E5656991CF462D300C5A191 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E56569D1CF462DF00C5A191 /* cs */,
+				7E56569F1CF462E500C5A191 /* sk */,
+				7E5656A11CF462EB00C5A191 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7E56569C1CF462D700C5A191 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E56569E1CF462DF00C5A191 /* cs */,
+				7E5656A01CF462E500C5A191 /* sk */,
+				7E5656A21CF462EB00C5A191 /* pl */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		961317CD1CC8FB4500FB2DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		961317CE1CC8FB4500FB2DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		961317D01CC8FB4500FB2DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22778F02452EDBC84798A0E0 /* Pods-Bonami.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Bonami/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.nscoders.Bonami;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bonami/Bonami-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		961317D11CC8FB4500FB2DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A51232D3DB1B16ECDC81E7D5 /* Pods-Bonami.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Bonami/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.nscoders.Bonami;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bonami/Bonami-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		961317D31CC8FB4500FB2DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BonamiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.chlumik.BonamiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bonami.app/Bonami";
+			};
+			name = Debug;
+		};
+		961317D41CC8FB4500FB2DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BonamiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.chlumik.BonamiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bonami.app/Bonami";
+			};
+			name = Release;
+		};
+		961317D61CC8FB4500FB2DAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BonamiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.chlumik.BonamiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Bonami;
+			};
+			name = Debug;
+		};
+		961317D71CC8FB4500FB2DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BonamiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.chlumik.BonamiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Bonami;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9613179F1CC8FB4500FB2DAD /* Build configuration list for PBXProject "Bonami" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961317CD1CC8FB4500FB2DAD /* Debug */,
+				961317CE1CC8FB4500FB2DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		961317CF1CC8FB4500FB2DAD /* Build configuration list for PBXNativeTarget "Bonami" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961317D01CC8FB4500FB2DAD /* Debug */,
+				961317D11CC8FB4500FB2DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		961317D21CC8FB4500FB2DAD /* Build configuration list for PBXNativeTarget "BonamiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961317D31CC8FB4500FB2DAD /* Debug */,
+				961317D41CC8FB4500FB2DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		961317D51CC8FB4500FB2DAD /* Build configuration list for PBXNativeTarget "BonamiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				961317D61CC8FB4500FB2DAD /* Debug */,
+				961317D71CC8FB4500FB2DAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		961317AE1CC8FB4500FB2DAD /* Bonami.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				961317AF1CC8FB4500FB2DAD /* Bonami.xcdatamodel */,
+			);
+			currentVersion = 961317AF1CC8FB4500FB2DAD /* Bonami.xcdatamodel */;
+			path = Bonami.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9613179C1CC8FB4500FB2DAD /* Project object */;
+}
